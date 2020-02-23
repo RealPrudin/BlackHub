@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3
+
+-- Instances:
+
 local k3ZKmhgNdo3SXKmWtSphxYmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
@@ -21,6 +26,8 @@ local NextPage = Instance.new("TextButton")
 local BlackHubLabel = Instance.new("TextLabel")
 local Close = Instance.new("ImageButton")
 local Open = Instance.new("ImageButton")
+
+--Properties:
 
 k3ZKmhgNdo3SXKmWtSphxYmO.Name = "k3ZKmhgNdo3SXKmWtSphxYmO"
 k3ZKmhgNdo3SXKmWtSphxYmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -439,6 +446,10 @@ Close.MouseButton1Click:connect(function()
 	Close.Visible = false
 	Open.Visible = true
 	Back.Visible = false
+	NextPage.Visible = false
+	Bloxburg.Visible = false
+	Fishing_Simulator.Visible = false
+	Car_Crushers_2.Visible = false
 end)
 
 Open.Name = "Open"
@@ -461,6 +472,6 @@ end)
 wait(0.3)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Blackhub";
-Text = "Made by Prudin#6667";
+Text = "Blackhub Loaded";
 Duration = 3;
 })
