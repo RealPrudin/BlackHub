@@ -342,7 +342,7 @@ Close.BackgroundColor3 = Color3.new(1, 1, 1)
 Close.BackgroundTransparency = 1
 Close.Position = UDim2.new(0.932198465, 0, 0.160728902, 0)
 Close.Size = UDim2.new(0, 15, 0, 16)
-Close.Image = "http://www.roblox.com/asset/?id=56290972"
+Close.Image = "http://www.roblox.com/asset/?id=27229179"
 Close.MouseButton1Click:connect(function()
 	BasicScripts.Visible = false
 	Owl_Hub.Visible = false
@@ -369,7 +369,7 @@ Open.BackgroundTransparency = 1
 Open.Position = UDim2.new(0.932198465, 0, 0.160728902, 0)
 Open.Size = UDim2.new(0, 15, 0, 16)
 Open.Visible = false
-Open.Image = "http://www.roblox.com/asset/?id=27229179"
+Open.Image = "http://www.roblox.com/asset/?id=56290972"
 Open.MouseButton1Click:connect(function()
 	Games.Visible = true
 	BasicScripts.Visible = true
