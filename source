@@ -1,3 +1,5 @@
+print("Made by Prudin#6667")
+
 local k3ZKmhgNdo3SXKmWtSphxTmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
