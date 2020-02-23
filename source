@@ -1,4 +1,9 @@
-local k3ZKmhgNdo3SXKmWtSphxTmO = Instance.new("ScreenGui")
+-- Gui to Lua
+-- Version: 3
+
+-- Instances:
+
+local k3ZKmhgNdo3SXKmWtSphxYmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
 local Back = Instance.new("TextButton")
@@ -14,21 +19,27 @@ local Mad_city = Instance.new("TextButton")
 local Noclip = Instance.new("TextButton")
 local Owl_Hub = Instance.new("TextButton")
 local Potato_Hub = Instance.new("TextButton")
+local Fishing_Simulator = Instance.new("TextButton")
+local Car_Crushers_2 = Instance.new("TextButton")
+local Bloxburg = Instance.new("TextButton")
+local NextPage = Instance.new("TextButton")
 local BlackHubLabel = Instance.new("TextLabel")
 local Close = Instance.new("ImageButton")
 local Open = Instance.new("ImageButton")
 
-k3ZKmhgNdo3SXKmWtSphxTmO.Name = "k3ZKmhgNdo3SXKmWtSphxTmO"
-k3ZKmhgNdo3SXKmWtSphxTmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+--Properties:
+
+k3ZKmhgNdo3SXKmWtSphxYmO.Name = "k3ZKmhgNdo3SXKmWtSphxYmO"
+k3ZKmhgNdo3SXKmWtSphxYmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 UpperCut.Name = "UpperCut"
-UpperCut.Parent = k3ZKmhgNdo3SXKmWtSphxTmO
-UpperCut.Active = true
+UpperCut.Parent = k3ZKmhgNdo3SXKmWtSphxYmO
 UpperCut.Active = true
 UpperCut.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
 UpperCut.BorderSizePixel = 0
-UpperCut.Position = UDim2.new(0.169491529, 0, 0.0724815726, 0)
+UpperCut.Position = UDim2.new(0.651771963, 0, 0.584766567, 0)
 UpperCut.Size = UDim2.new(0, 317, 0, 24)
+UpperCut.Draggable = true
 
 DropDown.Name = "DropDown"
 DropDown.Parent = UpperCut
@@ -37,7 +48,6 @@ DropDown.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
 DropDown.BorderSizePixel = 0
 DropDown.Position = UDim2.new(0, 0, 1, 0)
 DropDown.Size = UDim2.new(0, 317, 0, 148)
-UpperCut.Draggable = true
 
 Back.Name = "Back"
 Back.Parent = DropDown
@@ -65,6 +75,9 @@ Back.MouseButton1Click:connect(function()
 	Click_TP.Visible = false
 	Potato_Hub.Visible = false
 	Back.Visible = false
+	Bloxburg.Visible = false
+	Fishing_Simulator.Visible = false
+	Car_Crushers_2.Visible = false
 end)
 
 BasicScripts.Name = "BasicScripts"
@@ -159,6 +172,7 @@ Games.MouseButton1Click:connect(function()
 	Lawn_Mowing.Visible = true
 	Mad_city.Visible = true
 	Back.Visible = true
+	NextPage.Visible = true
 end)
 
 IY_FE.Name = "IY_FE"
@@ -254,7 +268,7 @@ Mad_city.Position = UDim2.new(0.711175859, 0, 0.34867382, 0)
 Mad_city.Size = UDim2.new(0, 68, 0, 44)
 Mad_city.Visible = false
 Mad_city.Font = Enum.Font.SourceSans
-Mad_city.Text = "Madcity"
+Mad_city.Text = "Mad city"
 Mad_city.TextColor3 = Color3.new(1, 1, 1)
 Mad_city.TextSize = 14
 Mad_city.MouseButton1Click:connect(function()
@@ -322,6 +336,78 @@ Potato_Hub.TextColor3 = Color3.new(1, 1, 1)
 Potato_Hub.TextSize = 14
 Potato_Hub.MouseButton1Click:connect(function()
 	loadstring(game:HttpGet(('https://www.potato-hub.com/PotatoHub.lua'),true))()
+end)
+
+Fishing_Simulator.Name = "Fishing_Simulator"
+Fishing_Simulator.Parent = DropDown
+Fishing_Simulator.BackgroundColor3 = Color3.new(1, 1, 1)
+Fishing_Simulator.BackgroundTransparency = 1
+Fishing_Simulator.BorderSizePixel = 0
+Fishing_Simulator.Position = UDim2.new(0.0326528475, 0, 0.335160553, 0)
+Fishing_Simulator.Size = UDim2.new(0, 88, 0, 44)
+Fishing_Simulator.Visible = false
+Fishing_Simulator.Font = Enum.Font.SourceSans
+Fishing_Simulator.Text = "Fishing Simulator"
+Fishing_Simulator.TextColor3 = Color3.new(1, 1, 1)
+Fishing_Simulator.TextSize = 14
+Fishing_Simulator.MouseButton1Click:connect(function()
+	loadstring(game:GetObjects("rbxassetid://4698235310")[1].Source)()
+end)
+
+Car_Crushers_2.Name = "Car_Crushers_2"
+Car_Crushers_2.Parent = DropDown
+Car_Crushers_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Car_Crushers_2.BackgroundTransparency = 1
+Car_Crushers_2.BorderSizePixel = 0
+Car_Crushers_2.Position = UDim2.new(0.378363281, 0, 0.335160553, 0)
+Car_Crushers_2.Size = UDim2.new(0, 84, 0, 44)
+Car_Crushers_2.Visible = false
+Car_Crushers_2.Font = Enum.Font.SourceSans
+Car_Crushers_2.Text = "Car Crushers 2"
+Car_Crushers_2.TextColor3 = Color3.new(1, 1, 1)
+Car_Crushers_2.TextSize = 14
+Car_Crushers_2.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/T7ERd3e8'))()
+end)
+
+Bloxburg.Name = "Bloxburg"
+Bloxburg.Parent = DropDown
+Bloxburg.BackgroundColor3 = Color3.new(1, 1, 1)
+Bloxburg.BackgroundTransparency = 1
+Bloxburg.BorderSizePixel = 0
+Bloxburg.Position = UDim2.new(0.69540298, 0, 0.335160553, 0)
+Bloxburg.Size = UDim2.new(0, 73, 0, 43)
+Bloxburg.Visible = false
+Bloxburg.Font = Enum.Font.SourceSans
+Bloxburg.Text = "Bloxburg"
+Bloxburg.TextColor3 = Color3.new(1, 1, 1)
+Bloxburg.TextSize = 14
+Bloxburg.MouseButton1Click:connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/izp4DJ9m"))()
+end)
+
+NextPage.Name = "NextPage"
+NextPage.Parent = DropDown
+NextPage.BackgroundColor3 = Color3.new(1, 1, 1)
+NextPage.BackgroundTransparency = 1
+NextPage.BorderSizePixel = 0
+NextPage.Position = UDim2.new(0.931511045, 0, 0.865540504, 0)
+NextPage.Size = UDim2.new(0, 22, 0, 19)
+NextPage.Visible = false
+NextPage.Font = Enum.Font.SourceSans
+NextPage.Text = "-->"
+NextPage.TextColor3 = Color3.new(1, 1, 1)
+NextPage.TextScaled = true
+NextPage.TextSize = 14
+NextPage.TextWrapped = true
+NextPage.MouseButton1Click:connect(function()
+	Jailbreak.Visible = false
+	Lawn_Mowing.Visible = false
+	Mad_city.Visible = false
+	Car_Crushers_2.Visible = true
+	Fishing_Simulator.Visible = true
+	Bloxburg.Visible = true
+	NextPage.Visible = false
 end)
 
 BlackHubLabel.Name = "BlackHubLabel"
