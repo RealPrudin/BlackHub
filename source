@@ -378,3 +378,10 @@ Open.MouseButton1Click:connect(function()
 	DropDown.Visible = true
 	Open.Visible = false
 end)
+
+wait(0.3)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Blackhub";
+Text = "Blackhub Loaded";
+Duration = 3;
+})
