@@ -270,7 +270,7 @@ Noclip.Position = UDim2.new(0.381517887, 0, 0.341917515, 0)
 Noclip.Size = UDim2.new(0, 73, 0, 44)
 Noclip.Visible = false
 Noclip.Font = Enum.Font.SourceSans
-Noclip.Text = "Noclip"
+Noclip.Text = "Noclip (E)"
 Noclip.TextColor3 = Color3.new(1, 1, 1)
 Noclip.TextSize = 14
 Noclip.MouseButton1Click:connect(function()
