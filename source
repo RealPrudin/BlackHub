@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3
-
--- Instances:
-
 local k3ZKmhgNdo3SXKmWtSphxYmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
@@ -26,8 +21,6 @@ local NextPage = Instance.new("TextButton")
 local BlackHubLabel = Instance.new("TextLabel")
 local Close = Instance.new("ImageButton")
 local Open = Instance.new("ImageButton")
-
---Properties:
 
 k3ZKmhgNdo3SXKmWtSphxYmO.Name = "k3ZKmhgNdo3SXKmWtSphxYmO"
 k3ZKmhgNdo3SXKmWtSphxYmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -468,6 +461,6 @@ end)
 wait(0.3)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Blackhub";
-Text = "Blackhub Loaded";
+Text = "Made by Prudin#6667";
 Duration = 3;
 })
