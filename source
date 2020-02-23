@@ -1,0 +1,380 @@
+local k3ZKmhgNdo3SXKmWtSphxTmO = Instance.new("ScreenGui")
+local UpperCut = Instance.new("Frame")
+local DropDown = Instance.new("Frame")
+local Back = Instance.new("TextButton")
+local BasicScripts = Instance.new("TextButton")
+local Click_TP = Instance.new("TextButton")
+local GUISButton = Instance.new("TextButton")
+local Games = Instance.new("TextButton")
+local IY_FE = Instance.new("TextButton")
+local Infinite_Jump = Instance.new("TextButton")
+local Jailbreak = Instance.new("TextButton")
+local Lawn_Mowing = Instance.new("TextButton")
+local Mad_city = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Owl_Hub = Instance.new("TextButton")
+local Potato_Hub = Instance.new("TextButton")
+local BlackHubLabel = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local Open = Instance.new("ImageButton")
+
+k3ZKmhgNdo3SXKmWtSphxTmO.Name = "k3ZKmhgNdo3SXKmWtSphxTmO"
+k3ZKmhgNdo3SXKmWtSphxTmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+UpperCut.Name = "UpperCut"
+UpperCut.Parent = k3ZKmhgNdo3SXKmWtSphxTmO
+UpperCut.Active = true
+UpperCut.Active = true
+UpperCut.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
+UpperCut.BorderSizePixel = 0
+UpperCut.Position = UDim2.new(0.169491529, 0, 0.0724815726, 0)
+UpperCut.Size = UDim2.new(0, 317, 0, 24)
+
+DropDown.Name = "DropDown"
+DropDown.Parent = UpperCut
+DropDown.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+DropDown.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+DropDown.BorderSizePixel = 0
+DropDown.Position = UDim2.new(0, 0, 1, 0)
+DropDown.Size = UDim2.new(0, 317, 0, 148)
+UpperCut.Draggable = true
+
+Back.Name = "Back"
+Back.Parent = DropDown
+Back.BackgroundColor3 = Color3.new(1, 1, 1)
+Back.BackgroundTransparency = 1
+Back.Position = UDim2.new(0.0127511621, 0, 0.0442583822, 0)
+Back.Size = UDim2.new(0, 30, 0, 12)
+Back.Visible = false
+Back.Font = Enum.Font.SourceSans
+Back.Text = "Back"
+Back.TextColor3 = Color3.new(1, 1, 1)
+Back.TextSize = 14
+Back.TextXAlignment = Enum.TextXAlignment.Left
+Back.MouseButton1Click:connect(function()
+	BasicScripts.Visible = true
+	GUISButton.Visible = true
+	Games.Visible = true
+	Jailbreak.Visible = false
+	Owl_Hub.Visible = false
+	Infinite_Jump.Visible = false
+	IY_FE.Visible = false
+	Lawn_Mowing.Visible = false
+	Noclip.Visible = false
+	Mad_city.Visible = false
+	Click_TP.Visible = false
+	Potato_Hub.Visible = false
+	Back.Visible = false
+end)
+
+BasicScripts.Name = "BasicScripts"
+BasicScripts.Parent = DropDown
+BasicScripts.BackgroundColor3 = Color3.new(1, 1, 1)
+BasicScripts.BackgroundTransparency = 1
+BasicScripts.BorderSizePixel = 0
+BasicScripts.Position = UDim2.new(0.378984213, 0, 0.324663639, 0)
+BasicScripts.Size = UDim2.new(0, 75, 0, 50)
+BasicScripts.Font = Enum.Font.SourceSans
+BasicScripts.Text = "Basic Scripts"
+BasicScripts.TextColor3 = Color3.new(1, 1, 1)
+BasicScripts.TextSize = 14
+BasicScripts.MouseButton1Click:connect(function()
+	GUISButton.Visible = false
+	BasicScripts.Visible = false
+	Games.Visible = false
+	Infinite_Jump.Visible = true
+	Noclip.Visible = true
+	Click_TP.Visible = true
+	Back.Visible = true
+end)
+
+Click_TP.Name = "Click_TP"
+Click_TP.Parent = DropDown
+Click_TP.BackgroundColor3 = Color3.new(1, 1, 1)
+Click_TP.BackgroundTransparency = 1
+Click_TP.BorderSizePixel = 0
+Click_TP.Position = UDim2.new(0.711175859, 0, 0.34867382, 0)
+Click_TP.Size = UDim2.new(0, 68, 0, 44)
+Click_TP.Visible = false
+Click_TP.Font = Enum.Font.SourceSans
+Click_TP.Text = "Click TP"
+Click_TP.TextColor3 = Color3.new(1, 1, 1)
+Click_TP.TextSize = 14
+Click_TP.MouseButton1Click:connect(function()
+	local Imput = game:GetService("UserInputService")
+local Plr = game.Players.LocalPlayer
+local Mouse = Plr:GetMouse()
+
+function To(position)
+    local Chr = Plr.Character
+    if Chr ~= nil then
+        Chr:MoveTo(position)
+    end
+end
+
+Imput.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 and Imput:IsKeyDown(Enum.KeyCode.LeftControl) then
+        To(Mouse.Hit.p)
+    end
+end)
+end)
+
+GUISButton.Name = "GUISButton"
+GUISButton.Parent = DropDown
+GUISButton.BackgroundColor3 = Color3.new(1, 1, 1)
+GUISButton.BackgroundTransparency = 1
+GUISButton.BorderSizePixel = 0
+GUISButton.Position = UDim2.new(0.717217445, 0, 0.324663639, 0)
+GUISButton.Size = UDim2.new(0, 67, 0, 50)
+GUISButton.Font = Enum.Font.SourceSans
+GUISButton.Text = "GUI's"
+GUISButton.TextColor3 = Color3.new(1, 1, 1)
+GUISButton.TextSize = 14
+GUISButton.MouseButton1Click:connect(function()
+	GUISButton.Visible = false
+	BasicScripts.Visible = false
+	Games.Visible = false
+	IY_FE.Visible = true
+	Potato_Hub.Visible = true
+	Owl_Hub.Visible = true
+	Back.Visible = true
+end)
+
+Games.Name = "Games"
+Games.Parent = DropDown
+Games.BackgroundColor3 = Color3.new(1, 1, 1)
+Games.BackgroundTransparency = 1
+Games.BorderSizePixel = 0
+Games.Position = UDim2.new(0.0610438362, 0, 0.324663639, 0)
+Games.Size = UDim2.new(0, 67, 0, 50)
+Games.Font = Enum.Font.SourceSans
+Games.Text = "Games"
+Games.TextColor3 = Color3.new(1, 1, 1)
+Games.TextSize = 14
+Games.MouseButton1Click:connect(function()
+	GUISButton.Visible = false
+	BasicScripts.Visible = false
+	Games.Visible = false
+	Jailbreak.Visible = true
+	Lawn_Mowing.Visible = true
+	Mad_city.Visible = true
+	Back.Visible = true
+end)
+
+IY_FE.Name = "IY_FE"
+IY_FE.Parent = DropDown
+IY_FE.BackgroundColor3 = Color3.new(1, 1, 1)
+IY_FE.BackgroundTransparency = 1
+IY_FE.BorderSizePixel = 0
+IY_FE.Position = UDim2.new(0.0578893423, 0, 0.34867382, 0)
+IY_FE.Size = UDim2.new(0, 68, 0, 44)
+IY_FE.Visible = false
+IY_FE.Font = Enum.Font.SourceSans
+IY_FE.Text = "Infinite Yield"
+IY_FE.TextColor3 = Color3.new(1, 1, 1)
+IY_FE.TextSize = 14
+IY_FE.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+Infinite_Jump.Name = "Infinite_Jump"
+Infinite_Jump.Parent = DropDown
+Infinite_Jump.BackgroundColor3 = Color3.new(1, 1, 1)
+Infinite_Jump.BackgroundTransparency = 1
+Infinite_Jump.BorderSizePixel = 0
+Infinite_Jump.Position = UDim2.new(0.0547347665, 0, 0.34867382, 0)
+Infinite_Jump.Size = UDim2.new(0, 68, 0, 44)
+Infinite_Jump.Visible = false
+Infinite_Jump.Font = Enum.Font.SourceSans
+Infinite_Jump.Text = "Infinite Jump"
+Infinite_Jump.TextColor3 = Color3.new(1, 1, 1)
+Infinite_Jump.TextSize = 14
+Infinite_Jump.MouseButton1Click:connect(function()
+	local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+
+_G.JumpHeight = 50;
+
+function Action(Object, Function) if Object ~= nil then Function(Object); end end
+
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(self)
+            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                Action(self.Parent.HumanoidRootPart, function(self)
+                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                end)
+            end
+        end)
+    end
+end)
+end)
+
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = DropDown
+Jailbreak.BackgroundColor3 = Color3.new(1, 1, 1)
+Jailbreak.BackgroundTransparency = 1
+Jailbreak.BorderSizePixel = 0
+Jailbreak.Position = UDim2.new(0.0578893423, 0, 0.341917038, 0)
+Jailbreak.Size = UDim2.new(0, 68, 0, 44)
+Jailbreak.Visible = false
+Jailbreak.Font = Enum.Font.SourceSans
+Jailbreak.Text = "Jailbreak"
+Jailbreak.TextColor3 = Color3.new(1, 1, 1)
+Jailbreak.TextSize = 14
+Jailbreak.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/yvmWLNP0", true))()
+end)
+
+Lawn_Mowing.Name = "Lawn_Mowing"
+Lawn_Mowing.Parent = DropDown
+Lawn_Mowing.BackgroundColor3 = Color3.new(1, 1, 1)
+Lawn_Mowing.BackgroundTransparency = 1
+Lawn_Mowing.BorderSizePixel = 0
+Lawn_Mowing.Position = UDim2.new(0.378363311, 0, 0.335160732, 0)
+Lawn_Mowing.Size = UDim2.new(0, 73, 0, 44)
+Lawn_Mowing.Visible = false
+Lawn_Mowing.Font = Enum.Font.SourceSans
+Lawn_Mowing.Text = "Lawn Mowing"
+Lawn_Mowing.TextColor3 = Color3.new(1, 1, 1)
+Lawn_Mowing.TextSize = 14
+Lawn_Mowing.MouseButton1Click:connect(function()
+_G.SoundEnabled = true;                 -- Will play a notification sound when a notification appears.
+_G.SuppressGameNotifications = true;     -- Will disable the default notifications in game.
+
+loadstring(game:GetObjects("rbxassetid://4652218796")[1].Source)()
+end)
+
+Mad_city.Name = "Mad_city"
+Mad_city.Parent = DropDown
+Mad_city.BackgroundColor3 = Color3.new(1, 1, 1)
+Mad_city.BackgroundTransparency = 1
+Mad_city.BorderSizePixel = 0
+Mad_city.Position = UDim2.new(0.711175859, 0, 0.34867382, 0)
+Mad_city.Size = UDim2.new(0, 68, 0, 44)
+Mad_city.Visible = false
+Mad_city.Font = Enum.Font.SourceSans
+Mad_city.Text = "Madcity"
+Mad_city.TextColor3 = Color3.new(1, 1, 1)
+Mad_city.TextSize = 14
+Mad_city.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://jxnt-scripts.com/scripts/madlads/MadLads.lua",true))()
+end)
+
+Noclip.Name = "Noclip"
+Noclip.Parent = DropDown
+Noclip.BackgroundColor3 = Color3.new(1, 1, 1)
+Noclip.BackgroundTransparency = 1
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.381517887, 0, 0.341917515, 0)
+Noclip.Size = UDim2.new(0, 73, 0, 44)
+Noclip.Visible = false
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.new(1, 1, 1)
+Noclip.TextSize = 14
+Noclip.MouseButton1Click:connect(function()
+	noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+
+if key == "e" then
+noclip = not noclip
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+print('Press "E" to noclip')
+end)
+
+Owl_Hub.Name = "Owl_Hub"
+Owl_Hub.Parent = DropDown
+Owl_Hub.BackgroundColor3 = Color3.new(1, 1, 1)
+Owl_Hub.BackgroundTransparency = 1
+Owl_Hub.BorderSizePixel = 0
+Owl_Hub.Position = UDim2.new(0.711175859, 0, 0.34867382, 0)
+Owl_Hub.Size = UDim2.new(0, 68, 0, 44)
+Owl_Hub.Visible = false
+Owl_Hub.Font = Enum.Font.SourceSans
+Owl_Hub.Text = "Owl Hub"
+Owl_Hub.TextColor3 = Color3.new(1, 1, 1)
+Owl_Hub.TextSize = 14
+Owl_Hub.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+Potato_Hub.Name = "Potato_Hub"
+Potato_Hub.Parent = DropDown
+Potato_Hub.BackgroundColor3 = Color3.new(1, 1, 1)
+Potato_Hub.BackgroundTransparency = 1
+Potato_Hub.BorderSizePixel = 0
+Potato_Hub.Position = UDim2.new(0.384672433, 0, 0.341917515, 0)
+Potato_Hub.Size = UDim2.new(0, 73, 0, 44)
+Potato_Hub.Visible = false
+Potato_Hub.Font = Enum.Font.SourceSans
+Potato_Hub.Text = "Potato Hub"
+Potato_Hub.TextColor3 = Color3.new(1, 1, 1)
+Potato_Hub.TextSize = 14
+Potato_Hub.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet(('https://www.potato-hub.com/PotatoHub.lua'),true))()
+end)
+
+BlackHubLabel.Name = "BlackHubLabel"
+BlackHubLabel.Parent = UpperCut
+BlackHubLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+BlackHubLabel.BackgroundTransparency = 1
+BlackHubLabel.Position = UDim2.new(0.013230741, 0, -0.0108517632, 0)
+BlackHubLabel.Size = UDim2.new(0, 200, 0, 24)
+BlackHubLabel.Font = Enum.Font.SourceSans
+BlackHubLabel.Text = "Blackhub"
+BlackHubLabel.TextColor3 = Color3.new(1, 1, 1)
+BlackHubLabel.TextSize = 21
+BlackHubLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = UpperCut
+Close.BackgroundColor3 = Color3.new(1, 1, 1)
+Close.BackgroundTransparency = 1
+Close.Position = UDim2.new(0.932198465, 0, 0.160728902, 0)
+Close.Size = UDim2.new(0, 15, 0, 16)
+Close.Image = "http://www.roblox.com/asset/?id=56290972"
+Close.MouseButton1Click:connect(function()
+	BasicScripts.Visible = false
+	Owl_Hub.Visible = false
+	GUISButton.Visible = false
+	Games.Visible = false
+	Jailbreak.Visible = false
+	Infinite_Jump.Visible = false
+	IY_FE.Visible = false
+	Lawn_Mowing.Visible = false
+	Noclip.Visible = false
+	Mad_city.Visible = false
+	Click_TP.Visible = false
+	Potato_Hub.Visible = false
+	DropDown.Visible = false
+	Close.Visible = false
+	Open.Visible = true
+	Back.Visible = false
+end)
+
+Open.Name = "Open"
+Open.Parent = UpperCut
+Open.BackgroundColor3 = Color3.new(1, 1, 1)
+Open.BackgroundTransparency = 1
+Open.Position = UDim2.new(0.932198465, 0, 0.160728902, 0)
+Open.Size = UDim2.new(0, 15, 0, 16)
+Open.Visible = false
+Open.Image = "http://www.roblox.com/asset/?id=27229179"
+Open.MouseButton1Click:connect(function()
+	Games.Visible = true
+	BasicScripts.Visible = true
+	GUISButton.Visible = true
+	Close.Visible = true
+	DropDown.Visible = true
+	Open.Visible = false
+end)
