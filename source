@@ -42,7 +42,6 @@ DropDown.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
 DropDown.BorderSizePixel = 0
 DropDown.Position = UDim2.new(0, 0, 1, 0)
 DropDown.Size = UDim2.new(0, 317, 0, 148)
-DropDown.Draggable = true
 
 Back.Name = "Back"
 Back.Parent = DropDown
