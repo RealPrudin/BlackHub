@@ -346,7 +346,7 @@ Fishing_Simulator.Text = "Fishing Simulator"
 Fishing_Simulator.TextColor3 = Color3.new(1, 1, 1)
 Fishing_Simulator.TextSize = 14
 Fishing_Simulator.MouseButton1Click:connect(function()
-	loadstring(game:GetObjects("rbxassetid://4698235310")[1].Source)()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/h9mgPtyE')))()
 end)
 
 Car_Crushers_2.Name = "Car_Crushers_2"
