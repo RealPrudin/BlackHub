@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3
-
--- Instances:
-
 local k3ZKmhgNdo3SXKmWtSphxYmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
@@ -27,8 +22,6 @@ local BlackHubLabel = Instance.new("TextLabel")
 local Close = Instance.new("ImageButton")
 local Open = Instance.new("ImageButton")
 
---Properties:
-
 k3ZKmhgNdo3SXKmWtSphxYmO.Name = "k3ZKmhgNdo3SXKmWtSphxYmO"
 k3ZKmhgNdo3SXKmWtSphxYmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
@@ -43,11 +36,13 @@ UpperCut.Draggable = true
 
 DropDown.Name = "DropDown"
 DropDown.Parent = UpperCut
+DropDown.Active = true
 DropDown.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
 DropDown.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
 DropDown.BorderSizePixel = 0
 DropDown.Position = UDim2.new(0, 0, 1, 0)
 DropDown.Size = UDim2.new(0, 317, 0, 148)
+DropDown.Draggable = true
 
 Back.Name = "Back"
 Back.Parent = DropDown
