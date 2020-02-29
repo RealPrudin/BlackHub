@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3
-
--- Instances:
-
 local k3ZKmhgNdo3SXKmWtSphxYmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
@@ -32,8 +27,6 @@ local Mining_Simulator = Instance.new("TextButton")
 local Rerollgg = Instance.new("TextButton")
 local Lumber_Tycoon_2 = Instance.new("TextButton")
 local Bee_Swarm_Simulator = Instance.new("TextButton")
-
---Properties:
 
 k3ZKmhgNdo3SXKmWtSphxYmO.Name = "k3ZKmhgNdo3SXKmWtSphxYmO"
 k3ZKmhgNdo3SXKmWtSphxYmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
