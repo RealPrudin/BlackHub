@@ -385,6 +385,19 @@ Car_Crushers_2.Font = Enum.Font.SourceSans
 Car_Crushers_2.Text = "Car Crushers 2"
 Car_Crushers_2.TextColor3 = Color3.new(1, 1, 1)
 Car_Crushers_2.TextSize = 14
+Car_Crushers_2.MouseButton1Click:connect(function()
+	-- // Configuration: \\ --
+
+shared.settings = {
+['DarkMode'] = true; -- Dark mode on the script itself.
+['AntiAfk'] = true; -- Enable anti-afk
+['CloseBind'] = Enum.KeyCode.Semicolon; -- Set this to your preferred key to close the menu.
+}
+
+-- // Loader: \\ --
+
+	loadstring(game:HttpGet('https://pastebin.com/raw/T7ERd3e8'))()
+end)
 
 Lawn_Mowing.Name = "Lawn_Mowing"
 Lawn_Mowing.Parent = ScrollingFrame
