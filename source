@@ -178,6 +178,7 @@ Games.MouseButton1Click:connect(function()
 	Games.Visible = false
 	ScrollingFrame.Visible = true
 	Back.Visible = true
+	Dropdown.Visible = false
 end)
 
 IY_FE.Name = "IY_FE"
