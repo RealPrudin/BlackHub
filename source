@@ -1,5 +1,3 @@
-print("Gui to Lua Version: 3")
-
 local k3ZKmhgNdo3SXKmWtSphxYmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
