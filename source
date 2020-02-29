@@ -310,8 +310,10 @@ Close.Position = UDim2.new(0.932198465, 0, 0.160728902, 0)
 Close.Size = UDim2.new(0, 15, 0, 16)
 Close.Image = "http://www.roblox.com/asset/?id=27229179"
 Close.MouseButton1Click:connect(function()
+	Open.Visible = true
 	DropDown.Visible = false
 	ScrollingFrame.Visible = false
+	Close.Visible = false
 end)
 
 Open.Name = "Open"
@@ -324,9 +326,11 @@ Open.Visible = false
 Open.Image = "http://www.roblox.com/asset/?id=56290972"
 Open.MouseButton1Click:connect(function()
 	DropDown.Visible = true
+	Close.Visible = true
+	Open.Visible = false
 end)
 
-ScrollingFrame.Parent = k3ZKmhgNdo3SXKmWtSphxYmO
+ScrollingFrame.Parent = UpperCut
 ScrollingFrame.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.651771903, 0, 0.6142506, 0)
