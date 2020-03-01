@@ -1,6 +1,7 @@
 local k3ZKmhgNdo3SXKmWtSphxYmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
+local Back = Instance.new("TextButton")
 local BasicScripts = Instance.new("TextButton")
 local Click_TP = Instance.new("TextButton")
 local GUISButton = Instance.new("TextButton")
@@ -26,7 +27,6 @@ local Rerollgg = Instance.new("TextButton")
 local Lumber_Tycoon_2 = Instance.new("TextButton")
 local Bee_Swarm_Simulator = Instance.new("TextButton")
 local Car_Crushers_2 = Instance.new("TextButton")
-local Back = Instance.new("TextButton")
 
 k3ZKmhgNdo3SXKmWtSphxYmO.Name = "k3ZKmhgNdo3SXKmWtSphxYmO"
 k3ZKmhgNdo3SXKmWtSphxYmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -47,6 +47,39 @@ DropDown.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
 DropDown.BorderSizePixel = 0
 DropDown.Position = UDim2.new(0, 0, 1, 0)
 DropDown.Size = UDim2.new(0, 317, 0, 148)
+
+Back.Name = "Back"
+Back.Parent = DropDown
+Back.BackgroundColor3 = Color3.new(1, 1, 1)
+Back.BackgroundTransparency = 1
+Back.Position = UDim2.new(0.0127511621, 0, 0.0442583822, 0)
+Back.Size = UDim2.new(0, 30, 0, 12)
+Back.Visible = false
+Back.Font = Enum.Font.SourceSans
+Back.Text = "Back"
+Back.TextColor3 = Color3.new(1, 1, 1)
+Back.TextSize = 14
+Back.TextXAlignment = Enum.TextXAlignment.Left
+Back.MouseButton1Click:connect(function()
+	BasicScripts.Visible = true
+	GUISButton.Visible = true
+	Games.Visible = true
+	Jailbreak.Visible = false
+	Owl_Hub.Visible = false
+	Infinite_Jump.Visible = false
+	IY_FE.Visible = false
+	Lawn_Mowing.Visible = false
+	Noclip.Visible = false
+	Mad_City.Visible = false
+	Click_TP.Visible = false
+	Potato_Hub.Visible = false
+	Back.Visible = false
+	Bloxburg.Visible = false
+	Fishing_Simulator.Visible = false
+	Car_Crushers_2.Visible = false
+	ScrollingFrame.Visible = false
+	UpperCut.Visible = true
+end)
 
 BasicScripts.Name = "BasicScripts"
 BasicScripts.Parent = DropDown
@@ -279,7 +312,6 @@ Open.MouseButton1Click:connect(function()
 	DropDown.Visible = true
 	Close.Visible = true
 	Open.Visible = false
-	Back.Visible = false
 end)
 
 ScrollingFrame.Parent = UpperCut
@@ -471,38 +503,6 @@ shared.settings = {
 ['CloseBind'] = Enum.KeyCode.Insert; }
 
 	loadstring(game:HttpGet('https://pastebin.com/raw/T7ERd3e8'))()
-end)
-
-Back.Name = "Back"
-Back.Parent = UpperCut
-Back.BackgroundColor3 = Color3.new(1, 1, 1)
-Back.BackgroundTransparency = 1
-Back.Position = UDim2.new(0.0299999993, 0, 1.29999995, 0)
-Back.Size = UDim2.new(0, 30, 0, 12)
-Back.Font = Enum.Font.SourceSans
-Back.Text = "Back"
-Back.TextColor3 = Color3.new(1, 1, 1)
-Back.TextSize = 14
-Back.TextXAlignment = Enum.TextXAlignment.Left
-Back.MouseButton1Click:connect(function()
-	BasicScripts.Visible = true
-	GUISButton.Visible = true
-	Games.Visible = true
-	Jailbreak.Visible = false
-	Owl_Hub.Visible = false
-	Infinite_Jump.Visible = false
-	IY_FE.Visible = false
-	Lawn_Mowing.Visible = false
-	Noclip.Visible = false
-	Mad_City.Visible = false
-	Click_TP.Visible = false
-	Potato_Hub.Visible = false
-	Back.Visible = false
-	Bloxburg.Visible = false
-	Fishing_Simulator.Visible = false
-	Car_Crushers_2.Visible = false
-	ScrollingFrame.Visible = false
-	UpperCut.Visible = true
 end)
 
 wait(0.21)
