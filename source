@@ -1,7 +1,6 @@
 local k3ZKmhgNdo3SXKmWtSphxYmO = Instance.new("ScreenGui")
 local UpperCut = Instance.new("Frame")
 local DropDown = Instance.new("Frame")
-local Back = Instance.new("TextButton")
 local BasicScripts = Instance.new("TextButton")
 local Click_TP = Instance.new("TextButton")
 local GUISButton = Instance.new("TextButton")
@@ -18,7 +17,6 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 local Bloxburg = Instance.new("TextButton")
 local Mad_City = Instance.new("TextButton")
 local Fishing_Simulator = Instance.new("TextButton")
-local Car_Crushers_2 = Instance.new("TextButton")
 local Lawn_Mowing = Instance.new("TextButton")
 local Jailbreak = Instance.new("TextButton")
 local Flight_Simulator = Instance.new("TextButton")
@@ -27,6 +25,8 @@ local Mining_Simulator = Instance.new("TextButton")
 local Rerollgg = Instance.new("TextButton")
 local Lumber_Tycoon_2 = Instance.new("TextButton")
 local Bee_Swarm_Simulator = Instance.new("TextButton")
+local Car_Crushers_2 = Instance.new("TextButton")
+local Back = Instance.new("TextButton")
 
 k3ZKmhgNdo3SXKmWtSphxYmO.Name = "k3ZKmhgNdo3SXKmWtSphxYmO"
 k3ZKmhgNdo3SXKmWtSphxYmO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -47,40 +47,6 @@ DropDown.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
 DropDown.BorderSizePixel = 0
 DropDown.Position = UDim2.new(0, 0, 1, 0)
 DropDown.Size = UDim2.new(0, 317, 0, 148)
-DropDown.Visible = false
-
-Back.Name = "Back"
-Back.Parent = DropDown
-Back.BackgroundColor3 = Color3.new(1, 1, 1)
-Back.BackgroundTransparency = 1
-Back.Position = UDim2.new(0.0127511621, 0, 0.0442583822, 0)
-Back.Size = UDim2.new(0, 30, 0, 12)
-Back.Visible = false
-Back.Font = Enum.Font.SourceSans
-Back.Text = "Back"
-Back.TextColor3 = Color3.new(1, 1, 1)
-Back.TextSize = 14
-Back.TextXAlignment = Enum.TextXAlignment.Left
-Back.MouseButton1Click:connect(function()
-	BasicScripts.Visible = true
-	GUISButton.Visible = true
-	Games.Visible = true
-	Jailbreak.Visible = false
-	Owl_Hub.Visible = false
-	Infinite_Jump.Visible = false
-	IY_FE.Visible = false
-	Lawn_Mowing.Visible = false
-	Noclip.Visible = false
-	Mad_City.Visible = false
-	Click_TP.Visible = false
-	Potato_Hub.Visible = false
-	Back.Visible = false
-	Bloxburg.Visible = false
-	Fishing_Simulator.Visible = false
-	Car_Crushers_2.Visible = false
-	ScrollingFrame.Visible = false
-	UpperCut.Visible = true
-end)
 
 BasicScripts.Name = "BasicScripts"
 BasicScripts.Parent = DropDown
@@ -167,9 +133,6 @@ Games.Text = "Games"
 Games.TextColor3 = Color3.new(1, 1, 1)
 Games.TextSize = 14
 Games.MouseButton1Click:connect(function()
-	GUISButton.Visible = false
-	BasicScripts.Visible = false
-	Games.Visible = false
 	ScrollingFrame.Visible = true
 	Back.Visible = true
 	DropDown.Visible = false
@@ -316,21 +279,22 @@ Open.MouseButton1Click:connect(function()
 	DropDown.Visible = true
 	Close.Visible = true
 	Open.Visible = false
+	Back.Visible = false
 end)
 
 ScrollingFrame.Parent = UpperCut
 ScrollingFrame.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(-0.00122492854, 0, 0.947583914, 0)
-ScrollingFrame.Size = UDim2.new(0, 317, 0, 146)
-ScrollingFrame.CanvasPosition = Vector2.new(0, 152)
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 250)
+ScrollingFrame.Position = UDim2.new(0, 0, 1, 0)
+ScrollingFrame.Size = UDim2.new(0, 317, 0, 148)
+ScrollingFrame.Visible = false
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 398)
 
 Bloxburg.Name = "Bloxburg"
 Bloxburg.Parent = ScrollingFrame
 Bloxburg.BackgroundColor3 = Color3.new(1, 1, 1)
 Bloxburg.BackgroundTransparency = 1
-Bloxburg.Position = UDim2.new(0.0390222594, 0, 0.00939352065, 0)
+Bloxburg.Position = UDim2.new(0.0399999991, 0, 0.00899999589, 0)
 Bloxburg.Size = UDim2.new(0, 133, 0, 50)
 Bloxburg.Font = Enum.Font.SourceSans
 Bloxburg.Text = "Bloxburg"
@@ -344,10 +308,10 @@ Mad_City.Name = "Mad_City"
 Mad_City.Parent = ScrollingFrame
 Mad_City.BackgroundColor3 = Color3.new(1, 1, 1)
 Mad_City.BackgroundTransparency = 1
-Mad_City.Position = UDim2.new(0.510081172, 0, 0.00939352065, 0)
+Mad_City.Position = UDim2.new(0.50999999, 0, 0.00899999961, 0)
 Mad_City.Size = UDim2.new(0, 133, 0, 50)
 Mad_City.Font = Enum.Font.SourceSans
-Mad_City.Text = "Mad city"
+Mad_City.Text = "Mad City"
 Mad_City.TextColor3 = Color3.new(1, 1, 1)
 Mad_City.TextSize = 14
 Mad_City.MouseButton1Click:connect(function()
@@ -358,7 +322,7 @@ Fishing_Simulator.Name = "Fishing_Simulator"
 Fishing_Simulator.Parent = ScrollingFrame
 Fishing_Simulator.BackgroundColor3 = Color3.new(1, 1, 1)
 Fishing_Simulator.BackgroundTransparency = 1
-Fishing_Simulator.Position = UDim2.new(0.0390222594, 0, 0.257038891, 0)
+Fishing_Simulator.Position = UDim2.new(0.0399999991, 0, 0.173999995, 0)
 Fishing_Simulator.Size = UDim2.new(0, 133, 0, 50)
 Fishing_Simulator.Font = Enum.Font.SourceSans
 Fishing_Simulator.Text = "Fishing Simulator"
@@ -368,30 +332,11 @@ Fishing_Simulator.MouseButton1Click:connect(function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/h9mgPtyE')))()
 end)
 
-Car_Crushers_2.Name = "Car_Crushers_2"
-Car_Crushers_2.Parent = ScrollingFrame
-Car_Crushers_2.BackgroundColor3 = Color3.new(1, 1, 1)
-Car_Crushers_2.BackgroundTransparency = 1
-Car_Crushers_2.Position = UDim2.new(0.510081172, 0, 0.257038891, 0)
-Car_Crushers_2.Size = UDim2.new(0, 133, 0, 50)
-Car_Crushers_2.Font = Enum.Font.SourceSans
-Car_Crushers_2.Text = "Car Crushers 2"
-Car_Crushers_2.TextColor3 = Color3.new(1, 1, 1)
-Car_Crushers_2.TextSize = 14
-Car_Crushers_2.MouseButton1Click:connect(function()
-shared.settings = {
-['DarkMode'] = true;
-['AntiAfk'] = true;
-['CloseBind'] = Enum.KeyCode.Insert; }
-
-	loadstring(game:HttpGet('https://pastebin.com/raw/T7ERd3e8'))()
-end)
-
 Lawn_Mowing.Name = "Lawn_Mowing"
 Lawn_Mowing.Parent = ScrollingFrame
 Lawn_Mowing.BackgroundColor3 = Color3.new(1, 1, 1)
 Lawn_Mowing.BackgroundTransparency = 1
-Lawn_Mowing.Position = UDim2.new(0.50999999, 0, 0.537, 0)
+Lawn_Mowing.Position = UDim2.new(0.50999999, 0, 0.349000007, 0)
 Lawn_Mowing.Size = UDim2.new(0, 133, 0, 50)
 Lawn_Mowing.Font = Enum.Font.SourceSans
 Lawn_Mowing.Text = "Lawn Mowing"
@@ -407,7 +352,7 @@ Jailbreak.Name = "Jailbreak"
 Jailbreak.Parent = ScrollingFrame
 Jailbreak.BackgroundColor3 = Color3.new(1, 1, 1)
 Jailbreak.BackgroundTransparency = 1
-Jailbreak.Position = UDim2.new(0.0390222594, 0, 0.745521665, 0)
+Jailbreak.Position = UDim2.new(0.0399999991, 0, 0.682833314, 0)
 Jailbreak.Size = UDim2.new(0, 133, 0, 50)
 Jailbreak.Font = Enum.Font.SourceSans
 Jailbreak.Text = "Jailbreak"
@@ -421,7 +366,7 @@ Flight_Simulator.Name = "Flight_Simulator"
 Flight_Simulator.Parent = ScrollingFrame
 Flight_Simulator.BackgroundColor3 = Color3.new(1, 1, 1)
 Flight_Simulator.BackgroundTransparency = 1
-Flight_Simulator.Position = UDim2.new(0.0309999995, 0, 0.537, 0)
+Flight_Simulator.Position = UDim2.new(0.0399999991, 0, 0.349166691, 0)
 Flight_Simulator.Size = UDim2.new(0, 133, 0, 50)
 Flight_Simulator.Font = Enum.Font.SourceSans
 Flight_Simulator.Text = "Flight Simulator"
@@ -442,7 +387,7 @@ Bubblegum_Simulator.Name = "Bubblegum_Simulator"
 Bubblegum_Simulator.Parent = ScrollingFrame
 Bubblegum_Simulator.BackgroundColor3 = Color3.new(1, 1, 1)
 Bubblegum_Simulator.BackgroundTransparency = 1
-Bubblegum_Simulator.Position = UDim2.new(0.513235748, 0, 1.13838613, 0)
+Bubblegum_Simulator.Position = UDim2.new(0.0399999991, 0, 0.515999973, 0)
 Bubblegum_Simulator.Size = UDim2.new(0, 133, 0, 50)
 Bubblegum_Simulator.Font = Enum.Font.SourceSans
 Bubblegum_Simulator.Text = "Bubblegum Simulator"
@@ -456,7 +401,7 @@ Mining_Simulator.Name = "Mining_Simulator"
 Mining_Simulator.Parent = ScrollingFrame
 Mining_Simulator.BackgroundColor3 = Color3.new(1, 1, 1)
 Mining_Simulator.BackgroundTransparency = 1
-Mining_Simulator.Position = UDim2.new(0.0390222594, 0, 1.04548073, 0)
+Mining_Simulator.Position = UDim2.new(0.0399999991, 0, 0.846666694, 0)
 Mining_Simulator.Size = UDim2.new(0, 133, 0, 50)
 Mining_Simulator.Font = Enum.Font.SourceSans
 Mining_Simulator.Text = "Mining Simulator"
@@ -470,7 +415,7 @@ Rerollgg.Name = "Reroll.gg"
 Rerollgg.Parent = ScrollingFrame
 Rerollgg.BackgroundColor3 = Color3.new(1, 1, 1)
 Rerollgg.BackgroundTransparency = 1
-Rerollgg.Position = UDim2.new(0.0390222594, 0, 1.75678301, 0)
+Rerollgg.Position = UDim2.new(0.50999999, 0, 0.683000028, 0)
 Rerollgg.Size = UDim2.new(0, 133, 0, 50)
 Rerollgg.Font = Enum.Font.SourceSans
 Rerollgg.Text = "Reroll.gg"
@@ -484,7 +429,7 @@ Lumber_Tycoon_2.Name = "Lumber_Tycoon_2"
 Lumber_Tycoon_2.Parent = ScrollingFrame
 Lumber_Tycoon_2.BackgroundColor3 = Color3.new(1, 1, 1)
 Lumber_Tycoon_2.BackgroundTransparency = 1
-Lumber_Tycoon_2.Position = UDim2.new(0.50999999, 0, 0.745000005, 0)
+Lumber_Tycoon_2.Position = UDim2.new(0.50999999, 0, 0.516166687, 0)
 Lumber_Tycoon_2.Size = UDim2.new(0, 133, 0, 50)
 Lumber_Tycoon_2.Font = Enum.Font.SourceSans
 Lumber_Tycoon_2.Text = "Lumber Tycoon 2"
@@ -494,14 +439,14 @@ Lumber_Tycoon_2.MouseButton1Click:connect(function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/wWxsHtxJ'),true))()
 end)
 
-Bee_Swarm_Simulator.Name = "Bubblegum_Simulator"
+Bee_Swarm_Simulator.Name = "Bee_Swarm_Simulator"
 Bee_Swarm_Simulator.Parent = ScrollingFrame
 Bee_Swarm_Simulator.BackgroundColor3 = Color3.new(1, 1, 1)
 Bee_Swarm_Simulator.BackgroundTransparency = 1
-Bee_Swarm_Simulator.Position = UDim2.new(0.510081172, 0, 1.79548073, 0)
+Bee_Swarm_Simulator.Position = UDim2.new(0.50999999, 0, 0.847000003, 0)
 Bee_Swarm_Simulator.Size = UDim2.new(0, 133, 0, 50)
 Bee_Swarm_Simulator.Font = Enum.Font.SourceSans
-Bee_Swarm_Simulator.Text = "Bubblegum Simulator"
+Bee_Swarm_Simulator.Text = "Bee Swarm Simulator"
 Bee_Swarm_Simulator.TextColor3 = Color3.new(1, 1, 1)
 Bee_Swarm_Simulator.TextSize = 14
 Bee_Swarm_Simulator.MouseButton1Click:connect(function()
@@ -509,7 +454,58 @@ Bee_Swarm_Simulator.MouseButton1Click:connect(function()
 	loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm")
 end)
 
-wait(0.3)
+Car_Crushers_2.Name = "Car_Crushers_2"
+Car_Crushers_2.Parent = ScrollingFrame
+Car_Crushers_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Car_Crushers_2.BackgroundTransparency = 1
+Car_Crushers_2.Position = UDim2.new(0.50999999, 0, 0.173666671, 0)
+Car_Crushers_2.Size = UDim2.new(0, 133, 0, 50)
+Car_Crushers_2.Font = Enum.Font.SourceSans
+Car_Crushers_2.Text = "Car Crushers 2"
+Car_Crushers_2.TextColor3 = Color3.new(1, 1, 1)
+Car_Crushers_2.TextSize = 14
+Car_Crushers_2.MouseButton1Click:connect(function()
+shared.settings = {
+['DarkMode'] = true;
+['AntiAfk'] = true;
+['CloseBind'] = Enum.KeyCode.Insert; }
+
+	loadstring(game:HttpGet('https://pastebin.com/raw/T7ERd3e8'))()
+end)
+
+Back.Name = "Back"
+Back.Parent = UpperCut
+Back.BackgroundColor3 = Color3.new(1, 1, 1)
+Back.BackgroundTransparency = 1
+Back.Position = UDim2.new(0.0299999993, 0, 1.29999995, 0)
+Back.Size = UDim2.new(0, 30, 0, 12)
+Back.Font = Enum.Font.SourceSans
+Back.Text = "Back"
+Back.TextColor3 = Color3.new(1, 1, 1)
+Back.TextSize = 14
+Back.TextXAlignment = Enum.TextXAlignment.Left
+Back.MouseButton1Click:connect(function()
+	BasicScripts.Visible = true
+	GUISButton.Visible = true
+	Games.Visible = true
+	Jailbreak.Visible = false
+	Owl_Hub.Visible = false
+	Infinite_Jump.Visible = false
+	IY_FE.Visible = false
+	Lawn_Mowing.Visible = false
+	Noclip.Visible = false
+	Mad_City.Visible = false
+	Click_TP.Visible = false
+	Potato_Hub.Visible = false
+	Back.Visible = false
+	Bloxburg.Visible = false
+	Fishing_Simulator.Visible = false
+	Car_Crushers_2.Visible = false
+	ScrollingFrame.Visible = false
+	UpperCut.Visible = true
+end)
+
+wait(0.21)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Blackhub";
 Text = "Blackhub Loaded";
