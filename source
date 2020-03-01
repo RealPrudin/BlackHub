@@ -167,7 +167,6 @@ Games.TextColor3 = Color3.new(1, 1, 1)
 Games.TextSize = 14
 Games.MouseButton1Click:connect(function()
 	ScrollingFrame.Visible = true
-	Back.Visible = true
 	DropDown.Visible = false
 end)
 
