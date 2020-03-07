@@ -64,19 +64,13 @@ Back.MouseButton1Click:connect(function()
 	BasicScripts.Visible = true
 	GUISButton.Visible = true
 	Games.Visible = true
-	Jailbreak.Visible = false
 	Owl_Hub.Visible = false
 	Infinite_Jump.Visible = false
 	IY_FE.Visible = false
-	Lawn_Mowing.Visible = false
 	Noclip.Visible = false
-	Mad_City.Visible = false
 	Click_TP.Visible = false
 	Potato_Hub.Visible = false
 	Back.Visible = false
-	Bloxburg.Visible = false
-	Fishing_Simulator.Visible = false
-	Car_Crushers_2.Visible = false
 	ScrollingFrame.Visible = false
 	UpperCut.Visible = true
 end)
