@@ -19,6 +19,8 @@ Choose.BorderColor3 = Color3.fromRGB(38, 38, 38)
 Choose.BorderSizePixel = 0
 Choose.Position = UDim2.new(0.353327096, 0, 0.384462178, 0)
 Choose.Size = UDim2.new(0, 312, 0, 101)
+Choose.Active = true
+Choose.Draggable = true
 
 Aztup_Hub.Name = "Aztup_Hub"
 Aztup_Hub.Parent = Choose
@@ -33,6 +35,7 @@ Aztup_Hub.TextSize = 20.000
 Aztup_Hub.TextWrapped = true
 Aztup_Hub.MouseButton1Click:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/RealPrudin/BlackHub/master/AztupHub'))()
+	Choose_A_UI.Enabled = false
 end)
 
 Wally_hub_V3.Name = "Wally_hub_V3"
@@ -48,6 +51,7 @@ Wally_hub_V3.TextSize = 20.000
 Wally_hub_V3.TextWrapped = true
 Wally_hub_V3.MouseButton1Click:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/RealPrudin/BlackHub/master/WallyHubV3'))()
+	Choose_A_UI.Enabled = false
 end)
 
 Original_Made_By_Me.Name = "Original_Made_By_Me"
@@ -63,6 +67,7 @@ Original_Made_By_Me.TextSize = 20.000
 Original_Made_By_Me.TextWrapped = true
 Original_Made_By_Me.MouseButton1Click:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/RealPrudin/BlackHub/master/Original'))()
+	Choose_A_UI.Enabled = false
 end)
 
 Choose_UI.Name = "Choose_UI"
