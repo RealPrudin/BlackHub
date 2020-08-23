@@ -69,8 +69,8 @@ LoginButton.Text = "Login"
 LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoginButton.TextSize = 14.000
 LoginButton.MouseButton1Click:Connect(function()
-	if Username.Text == "lol" then
-		if Password.Text == "lol" then
+	if Username.Text == "Blackhub" then
+		if Password.Text == "key2020" then
 			loadstring(game:HttpGet("https://pastebin.com/raw/evt2h21d", true))()
 			ScreenGui:Destroy()
 		end
