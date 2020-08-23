@@ -1,0 +1,85 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Login = Instance.new("ImageLabel")
+local Whitelist = Instance.new("TextLabel")
+local Username = Instance.new("TextBox")
+local Password = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+-- ScreenGui.Parent = game.CoreGui
+
+Login.Name = "Login"
+Login.Parent = ScreenGui
+Login.AnchorPoint = Vector2.new(0.5, 0.5)
+Login.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Login.BackgroundTransparency = 1.000
+Login.Position = UDim2.new(0.5, 0, 0.5, 0)
+Login.Size = UDim2.new(0, 284, 0, 148)
+Login.Image = "rbxassetid://3570695787"
+Login.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Login.ScaleType = Enum.ScaleType.Slice
+Login.SliceCenter = Rect.new(100, 100, 100, 100)
+Login.SliceScale = 0.050
+Login.Active = true
+Login.Draggable = true
+
+Whitelist.Name = "Whitelist"
+Whitelist.Parent = Login
+Whitelist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Whitelist.BackgroundTransparency = 1.000
+Whitelist.Position = UDim2.new(-0.00259789824, 0, -0.000958353281, 0)
+Whitelist.Size = UDim2.new(0, 284, 0, 39)
+Whitelist.Font = Enum.Font.SourceSans
+Whitelist.Text = "Whitelist"
+Whitelist.TextColor3 = Color3.fromRGB(255, 255, 255)
+Whitelist.TextScaled = true
+Whitelist.TextSize = 14.000
+Whitelist.TextWrapped = true
+
+Username.Name = "Username"
+Username.Parent = Login
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 0.900
+Username.Position = UDim2.new(0.148000002, 0, 0.324999988, 0)
+Username.Size = UDim2.new(0, 200, 0, 24)
+Username.Font = Enum.Font.SourceSans
+Username.Text = "Username"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextSize = 14.000
+
+Password.Name = "Password"
+Password.Parent = Login
+Password.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Password.BackgroundTransparency = 0.900
+Password.Position = UDim2.new(0.147887319, 0, 0.554231644, 0)
+Password.Size = UDim2.new(0, 200, 0, 24)
+Password.Font = Enum.Font.SourceSans
+Password.Text = "Password"
+Password.TextColor3 = Color3.fromRGB(255, 255, 255)
+Password.TextSize = 14.000
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = Login
+LoginButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.BackgroundTransparency = 0.900
+LoginButton.Position = UDim2.new(0, 111, 0, 118)
+LoginButton.Size = UDim2.new(0, 62, 0, 20)
+LoginButton.Font = Enum.Font.SourceSans
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.TextSize = 14.000
+LoginButton.MouseButton1Click:Connect(function()
+	if Username.Text == "lol" then
+		if Password.Text == "lol" then
+			loadstring(game:HttpGet("https://pastebin.com/raw/evt2h21d", true))()
+			ScreenGui:Destroy()
+		end
+	end
+end)
+
+Frame.Parent = Login
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.900
+Frame.Position = UDim2.new(0, -1, 0, 38)
+Frame.Size = UDim2.new(0, 285, 0, 1)
