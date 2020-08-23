@@ -6,8 +6,7 @@ local Password = Instance.new("TextBox")
 local LoginButton = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
--- ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.CoreGui
 
 Login.Name = "Login"
 Login.Parent = ScreenGui
